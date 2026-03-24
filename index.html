@@ -1,1 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Stop Vaping</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 
+<body>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <h1>VAPING IS NOT HARMLESS</h1>
+        <p>It starts as a trend. It ends as an addiction.</p>
+        <button onclick="scrollToSection()">Learn The Truth</button>
+    </section>
+
+    <!-- FACTS SECTION -->
+    <section class="section">
+        <h2>The Reality</h2>
+        <div class="cards">
+            <div class="card">Nicotine rewires your brain.</div>
+            <div class="card">Vapes contain toxic chemicals.</div>
+            <div class="card">Lung damage can happen early.</div>
+        </div>
+    </section>
+
+    <!-- INTERACTIVE FACT -->
+    <section class="section dark">
+        <h2>Click for a Fact</h2>
+        <button onclick="showFact()">Show Fact</button>
+        <p id="fact"></p>
+    </section>
+
+    <!-- STORY SECTION -->
+    <section class="section">
+        <h2>A Real Scenario</h2>
+        <p class="story">
+            You try it once with friends.  
+            It feels harmless.  
+            Weeks later, you need it.  
+            Months later, you can't focus without it.  
+            You're not in control anymore.
+        </p>
+    </section>
+
+    <!-- QUIZ SECTION -->
+    <section class="section dark">
+        <h2>Quick Check</h2>
+        <p>Do you feel cravings when you don’t vape?</p>
+        <button onclick="quiz('yes')">Yes</button>
+        <button onclick="quiz('no')">No</button>
+        <p id="quizResult"></p>
+    </section>
+
+    <!-- HELP SECTION -->
+    <section class="section">
+        <h2>How To Stop</h2>
+        <ul>
+            <li>Stay away from triggers</li>
+            <li>Replace the habit (gym, water, gum)</li>
+            <li>Talk to someone</li>
+            <li>Take it one day at a time</li>
+        </ul>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>Make the choice before it makes you.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
